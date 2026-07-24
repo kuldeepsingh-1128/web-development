@@ -1,0 +1,23 @@
+header h1{
+    background-color: #111844;
+    color: #EAE0CF;
+    margin: 0;
+
+    display: inline;
+}
+img{
+    align-items: end;
+
+    background-color: #111844;;
+}
+header{
+    background-color: #111844;
+    border: 2px solid black;
+}
+section{
+    background-color: #7288AE !important;
+}
+
+*{
+    background-color: #4B5694;
+}

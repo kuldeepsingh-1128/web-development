@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+
+        <!-- checkbox -->
+
+        <form action="/server">
+            <input type="checkbox" name="age" id="page">
+            <label for="page">i am 18+</label>
+            <button>submit</button>
+        </form>
+        <hr>
+
+        <!-- radio -->
+
+        <form action="https://www.google.com/search">
+
+            <input type="radio" name="q" id="apple" value="APPLE">
+            <label for="apple">Apple</label>
+
+            <input type="radio" name="q" id="mango" value="MANGO">
+            <label for="mango">Mango</label>
+
+            <input type="radio" name="q" id="banana" value="BANANA">
+            <label for="banana">Banana</label>
+
+            <button>submit</button>
+            <hr>
+        </form>
+
+        <!-- Dropdown -->
+
+        <form action="server">
+            <div>
+                choose your profession!!
+                <select name="profession" id="profession">
+                    <option value="none" >none</option>
+                    <option value="student" selected>Student</option>
+                    <option value="working">Working</option>
+                    <option value="housewife">housewife</option>
+                </select>
+                <button>submit</button>
+            </div>
+        </form>
+        <hr>
+
+        <!-- Range -->
+         <form action="server">
+            <div>
+
+                <label for="vol">select volume <br></label>
+                <input type="range" id="vol" min="0" max="100" step="20" name="volume" value="40">
+                <button>submit</button>
+                <br>
+                <label for="feedback">plz enter your valueble feedback</label>
+                <textarea name="feedback" id="" placeholder="enter here" name="feedback" rows="5" cols="50"></textarea>
+            </div>
+         </form>
+
+    </main>
+
+</body>
+
+</html>
