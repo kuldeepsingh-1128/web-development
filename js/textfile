@@ -1,0 +1,4 @@
+NaN :- NaN is a number but it pointed to a not number value
+        eg;- 0/0
+
+        
