@@ -1,0 +1,18 @@
+*{
+    background-color: black;
+}
+
+h1{
+    color: rgb(255,0,0);
+
+}
+
+p{
+    color: red;
+}
+
+button{
+    background-color: gold;
+    color: black;
+    
+}

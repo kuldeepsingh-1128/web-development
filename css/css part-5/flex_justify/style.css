@@ -1,0 +1,38 @@
+#container{
+    height: 300px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: azure;
+    border: 2px solid black;
+    text-align: center;
+    display: flex;                          /* use to make flex */
+    /* flex-direction: row; */              /*Flex direction is row (by default)  */
+    /* flex-direction: row-reverse; */      /*  to make row reverse order */
+    /* flex-direction: column; */           
+    /* flex-direction: column-reverse; */
+
+    flex-direction: row;
+    /* justify-content: flex-end; */        /* main axis contain at ending side and in starting side space is collected */
+    /* justify-content: flex-start; */      /*main axis contain at starting side */
+    /* justify-content: center; */
+    align-items: center;
+
+    /* justify-content:space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+
+
+}
+
+#container div{
+    height: 40px;
+    width: 70px;
+    font-size: 1.5em;
+    color: rgb(231, 231, 231);
+
+
+}

@@ -1,0 +1,137 @@
+*{
+    margin: 2px;
+
+    background-color: rgba(0, 0, 0, .1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #a82723;;
+}
+header{
+    background-color: white;
+}
+
+main{
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+#signup{
+    background-color: #a82723 ;
+    color: #fff;
+
+}
+#login{     /* ID selector */
+    background-color: white ;
+    color: #000;
+}
+
+button{
+    border-radius: 10px;
+}
+
+.blog{      /*class selector*/
+    background-color: white;
+
+}
+
+p,h3{       /*multipal selector at a time used*/
+    background-color: white;
+    
+}
+
+ul{
+    display: flex;
+    gap: 10%;
+}
+
+.blog a{        /*descendent selector (direct approch to any child or child of child )*/
+    background-color: yellow;
+
+}
+
+input{
+    border-radius: 10px;;
+}
+
+p+h3{      /*sibling selector (same level)*/
+    text-decoration: underline;
+
+}
+.upvote+button{
+    background-color: lightblue;
+    color: blue;
+}
+.upvote{
+    background-color: rgb(96, 220, 96);
+    color: aliceblue;
+}
+
+div>input{    /*one direct child (child selector)*/
+    background-color: rgb(220, 116, 116);
+}
+
+/* input[type="text"]{
+    color: green;
+}
+
+input[type="password"]{
+    color: red;
+} */
+
+input[type]{
+    color: yellow;
+}
+
+a:hover{
+    color: red;
+}
+
+button:hover{
+    background-color: #000;
+    color: white;
+    border-radius: 20px;
+
+}
+ul{
+    background-color: white;
+}
+ul a{
+    background-color: white;
+}
+
+section>p:hover{
+    color: darkblue;
+    font-weight: bold;
+}
+
+input[type="radio"]:checked +label{
+    color: green;
+    font-weight: bold;
+}
+
+h1::first-letter{
+    color: green;
+    font-weight: bold;
+    font-size:larger;
+
+}
+
+#lorem p::first-line{
+    color: blue;
+}
+
+p::selection{
+    background-color: yellow;
+}
+h3::selection{
+    background-color: limegreen;
+}
+
+.login{
+    background-color: green !important;
+}

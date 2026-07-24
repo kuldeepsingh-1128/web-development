@@ -1,0 +1,40 @@
+*{
+    color: white;
+    background-color: black;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style:wavy;
+    letter-spacing: 10px;
+    /* text-align: end;
+    text-align: left;
+    text-align: right; */
+}
+
+/* font-weight : 100 to 900; */
+
+p{
+    text-align: justify; 
+    line-height: 1.5;
+    text-decoration: red dotted underline ;
+    font-size: 15px;
+    
+    /* font-weight: bold;  700 */
+}
+
+h3{
+    font-weight: 600;
+    text-decoration: line-through;
+    /* font-weight: 400;    (400 is normal size) */
+
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}

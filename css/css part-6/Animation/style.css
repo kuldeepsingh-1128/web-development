@@ -1,0 +1,45 @@
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: lightpink;
+
+    animation-name: fontanimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.head{
+    height: 20px;
+    background-color: black;
+    color: white;
+
+    /* animation-name: textaimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    animation: textaimate 2s ease-in 1s infinite alternate;
+    
+}
+
+
+@keyframes fontanimation{
+    from{font-size: 20px;
+    color: black;}
+    to{font-size: 40px;
+    color: red;}
+}
+
+@keyframes textaimate{
+    from{
+        width: 1px;
+
+    }
+    to{
+        width: 200px;
+    }
+}

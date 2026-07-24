@@ -1,0 +1,23 @@
+div[a]{        /* div along with there child element become yello  */
+    background-color: yellow;
+}
+form{       /* form along with there child lebal become red but not input box */
+    background-color: red;
+}
+
+/* child by default inherat property of there prarents but not input box  */
+
+h1{
+    color: green;
+    /* border: 2px solid black; */
+    text-decoration: underline black;
+    text-align: center;
+}
+
+body{
+    border: 2px solid black;
+    background-image: url('https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}

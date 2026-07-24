@@ -1,0 +1,59 @@
+div{
+    /* border: 2px solid black;
+    margin: 10px; */
+
+
+}
+
+h1{
+    width: 33.33%;
+    background-color: yellow;
+}
+
+#outer{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+
+
+}
+
+#inner{
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left :50%;
+    margin-top:0;
+
+}
+
+.outer{
+    height: 400px;
+    width: 400px;
+    background-color: lightpink;
+    font-size: 20px;
+    padding: 1em;
+
+}
+
+.inner{
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
+    font-size: 2em;
+    margin: 25%;
+    padding: 1em;
+
+}
+
+button{
+    font-size: 50px;
+    border-radius: 20px;
+    border: 2px solid green;
+    padding: 0 1em 0;
+}
+
+section div{
+    font-size: 2rem;
+}

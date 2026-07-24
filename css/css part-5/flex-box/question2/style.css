@@ -1,0 +1,42 @@
+#outer{
+    height: 50px;
+    width: 900px;
+    border: 2px solid green;
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    font-size: larger;
+    border-radius: 10px;
+    background-color: lightpink;
+
+
+
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#outer div{
+    height: 50px;
+    width: 80px;
+
+    /* padding-top: 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+
+}
+a:hover{
+    font-weight: bold;
+    color: blue;
+}

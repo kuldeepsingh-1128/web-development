@@ -1,0 +1,27 @@
+div{
+    background-color: pink;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    /* margin-top: 100px; */
+    text-align: center;
+    padding-top: 50px;
+
+    transform:rotate(45deg);
+
+    /* scale */
+    /* transform: scale(1.5); */
+    /* transform: scale(2 ,0.5); */
+    /* transform: scaleX(2); */
+    /* transform: scaleY(3); */
+
+    /* translete */
+    /* transform: translate(100px,200px); */
+    /* transform: translateX(100px); */
+    /* transform: translateY(200px); */
+    
+
+
+    /* skew */
+    transform: skew(45deg);
+}

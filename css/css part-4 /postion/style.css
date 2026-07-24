@@ -1,0 +1,41 @@
+div{
+    color: black;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: lightblue;
+    border: 2px solid black;
+    margin: 10px;
+}
+#span{
+    height: 500px;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    border: white;
+}
+
+#demo{
+    background-color: lightcoral;
+    /* position: static;   No change in postion while position is static*/ 
+    position: relative;
+    top: 43px;
+    left: -89px;
+}
+
+#absolute{
+    background-color: lightgray;
+    /* in absolute postion ,position is set according to the parent element */
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+
+#fixed{
+    background-color: lightyellow;
+    /* in absolute postion ,position is set according to the parent element */
+    position: fixed;
+    top: 81px;
+    left: 200px;
+}

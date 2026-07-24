@@ -1,0 +1,104 @@
+
+h1{
+    height: 50px;
+    background-color: black;
+    color: white;
+    animation: headinganimate 2s ease-in 1s infinite alternate;
+}
+
+*{
+    background-color: greenyellow;
+    margin: 0;
+}
+
+.container{
+    height: 800px;
+    background-color: rgb(0, 255, 0);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    
+
+}
+
+.items{
+    height: 70px;
+    width: 90px;
+    background-color: yellow;
+    text-align: center;
+
+}
+
+@keyframes headinganimate{
+    from{
+
+        color: white;
+    }
+    to{
+
+        color: blue;
+    }
+}
+
+
+@media(max-width:300px){
+    h1{
+    height: 50px;
+    background-color: red;
+    color: white;
+
+    animation: headinganimate 2s ease-in 1s infinite alternate;
+}
+
+*{
+    background-color: greenyellow;
+    margin: 0;
+}
+
+.container{
+    height: 900px;
+    background-color: rgb(0, 255, 0);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
+    
+
+}
+
+.items{
+    height: 60px;
+    width: 100px;
+    background-color: yellow;
+    text-align: center;
+
+}
+@keyframes headinganimate{
+    from{
+
+        color: rgb(238, 255, 0);
+    }
+    to{
+
+        color: black;
+    }
+}
+
+}
+
+@media (max-width:500px) and (min-width:300px){
+    h1{
+        background-color: lightcoral;
+
+    }
+}
+
+@media(orientation: landscape){
+    h1{
+        background-color: aqua;
+        
+    }
+}

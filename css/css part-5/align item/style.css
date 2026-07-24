@@ -1,0 +1,42 @@
+#container{
+    height: 300px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: azure;
+    border: 2px solid black;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-content: flex-end;
+
+    flex-wrap: wrap;
+}
+
+#container div{
+    height: 40px;
+    width: 100px;
+    font-size: 1.5em;
+    color: rgb(231, 231, 231);
+
+
+}
+
+#orange{
+    /* flex-basis: 29px; */
+    flex-grow: 1;
+    min-width: 200px;
+}
+
+#blue{
+    flex-basis: 250px;
+    flex-grow: 1;
+
+}
+
+#red{
+    flex-grow: 1;
+    max-width: 200px;
+}
