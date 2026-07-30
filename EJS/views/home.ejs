@@ -1,0 +1,32 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+        *{
+            background-color: greenyellow;
+            color:blue;
+        }
+
+    </style>
+</head> -->
+<%- include("../include/head.ejs")%>
+<body>
+    <h1>this is my home page</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus deleniti et distinctio magnam illo placeat optio neque quos voluptatibus nisi inventore numquam sequi dolor exercitationem quod eum officia amet porro voluptas, illum sapiente saepe consectetur eveniet! Temporibus libero blanditiis eos inventore laudantium. Necessitatibus totam ratione sed a fugit quaerat reiciendis, praesentium dolorem sequi tempora consectetur! Unde quidem dolore quo minima eos alias quae, quod perspiciatis corrupti assumenda saepe provident amet similique fugit libero commodi nemo ipsa adipisci dicta magnam facilis in ipsum doloremque? Atque quisquam ad dolore eveniet in quo asperiores veritatis totam facilis praesentium. Tenetur ipsa soluta quod.</p>
+    <button>click me</button>
+    <h3>Roll the dice=<%=value%></h3>
+
+    <% if(value==6){%>
+        <h2>Wow, you have 1 more chance to roll the dice</h2>
+        <%} %>
+    <%-include("../include/footer.ejs")%>
+
+    <a href="/ig/cats">
+        <button>instagram</button>
+    </a>
+</body>
+</html>
+
