@@ -10,12 +10,16 @@
     <h1>Quora posts</h1>
     <hr>
     <%for(post of posts){%>
-      <div class="post">
+      <div class="posts">
         <h3 class="user">@<%=post.username%></h3>
         <h4 class="content"><%=post.content%></h4>
         <hr>
       </div>  
     <%}%>
+
+    <br>
+    <br>
+    <a href="http://localhost:8080/posts/new">Create new post</a>
 </body>
 </html>
 
