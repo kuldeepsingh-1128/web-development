@@ -1,15 +1,21 @@
 // import { constants } from "buffer";
 import express from "express";
 const app=express();
+
 import path,{ join } from "path";
 import { fileURLToPath } from "url";
+
 import { v4 as uuidv4 } from 'uuid';
+
+import methodOverride from "method-override";
+app.use(methodOverride('_method'));
 
 const __filename=fileURLToPath(import.meta.url);
 const __dirname=path.dirname(__filename);
 
 app.use(express.urlencoded({extended:true}));
 app.set("view engine","ejs");
+
 app.set("views",path.join(__dirname,"views"));
 app.use(express.static(path.join(__dirname,"public")));
 
@@ -69,4 +75,33 @@ app.get("/posts/:id",(req,res)=>{
     }
 
     res.render("show.ejs",{post});
+})
+
+app.get("/posts/:id/edit" ,(req,res)=>{
+    let {id}=req.params;
+    let post=posts.find((p)=>p.id===id);
+    
+    res.render("edit.ejs",{post});
+})
+
+app.patch("/posts/:id",(req,res)=>{
+    let {id}=req.params;
+    let newcontent=req.body.content;
+    let post=posts.find((p)=>p.id===id);
+    post.content=newcontent;
+    // console.log(post);
+    // res.send("patch requist is working");
+    res.redirect("/posts");
+})
+
+
+app.delete("/posts/:id",(req,res)=>{
+    let {id}=req.params;
+    posts=posts.filter((p)=>p.id!==id);
+    console.log(post);
+    res.redirect("/posts");
+})
+
+app.use((req,res)=>{
+    res.render("error.ejs");
 })

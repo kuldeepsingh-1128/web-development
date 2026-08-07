@@ -18,6 +18,12 @@
         <%=post.content%>
       </h4>
       <a href="http://localhost:8080/posts/<%=post.id%>">see more..</a>
+      &nbsp;&nbsp;&nbsp;
+      <a href="http://localhost:8080/posts/<%=post.id%>/edit">edit post</a>
+      &nbsp;&nbsp;&nbsp;
+      <form action="/posts/<%=post.id%>?_method=DELETE" method="post">
+        <button>Delete post</button>
+      </form>
       <hr>
     </div>
     
@@ -25,8 +31,8 @@
 
       <br>
       <br>
-      <br><br><br><br><br><br><br><br><br>
-      <a href="http://localhost:8080/posts/new">Create new post</a>
+      <br><br><br><br><br><br><br>
+      <a class="a" href="http://localhost:8080/posts/new">Create new post</a>
 </body>
 
 </html>
