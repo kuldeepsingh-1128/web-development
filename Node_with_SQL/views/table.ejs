@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>INSTA_USER DATA</h2>
+    <Table>
+        <caption>Insta user data that resgister till now..</caption>
+        <tbody>
+            <tr>
+                <th scope="col">I'D</th>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+            </tr>
+            <%for(user of users){%>
+            <tr>
+                <td><%=user.id%></td>
+                <td><%=user.username%></td>
+                <td><%=user.email%></td>
+                <td>
+                    <form method="get" action="/user/<%=user.id%>/edit">
+                        <button>Edit</button>
+                    </form>
+                </td>
+            </tr>
+            <%}%>
+        </tbody>
+    </Table>
+</body>
+</html>
