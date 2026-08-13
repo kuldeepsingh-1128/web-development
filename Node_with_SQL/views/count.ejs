@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h2>Total number of user are : <%=count%></h2>
-    <button>join us!</button>
+    <h2>Total number of user are : <%=count%>
+    </h2>
+    <span>
+        <form action="/user/:id/add">
+            <button>join us!</button>
+        </form>
+        <form action="/user">
+            <button>see users</button>
+        </form>
+    </span>
 </body>
+
 </html>

@@ -114,10 +114,46 @@ app.patch("/user/:id",(req,res)=>{
 
     })
     }catch(err){
-        console.log(err);
+        res.send("you can't edit username. Error occurr...");
     }
     
 })
+
+app.delete("/user/:id",(req,res)=>{
+    let {id}=req.params;
+    let q=`delete from user where id='${id}'`;
+    try{
+        connection.query(q,(err,result)=>{
+            if(err) throw err;
+            res.redirect("/user");
+        })
+    }catch{
+        res.send("error");
+    }
+})
+
+app.get("/user/:id/add",(req,res)=>{
+    let id=faker.string.uuid();
+    console.log(id);
+    res.render("add.ejs",{id});
+})
+
+app.post("/user/:id/add",(req,res)=>{
+    let id=req.params.id;
+    let {username,email,password}=req.body;
+    let q=`insert into user (id,username,email,password) values ('${id}','${username}','${email}','${password}')`;
+
+    try{
+        connection.query(q,(err,result)=>{
+            if(err) throw err;
+            console.log(result);
+            res.redirect("/user");
+        })
+    }catch{
+        res.send(err);
+    }
+})
+
 
 
 

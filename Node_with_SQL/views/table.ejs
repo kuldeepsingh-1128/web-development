@@ -35,9 +35,24 @@
                         <button>Edit</button>
                     </form>
                 </td>
+                <td>
+                    <form action="/user/<%=user.id%>?_method=delete" method="post">
+                        <button>delete</button>
+                    </form>
+                </td>
             </tr>
             <%}%>
+
+            <h3>
+            <form action="/user/<%=user.id%>/add">
+                <button>Add user..</button>
+            </form>
+            <form action="/" method="get">
+                <button>number of users</button>
+            </form>
+        </h3>
         </tbody>
+        
     </Table>
 </body>
 </html>
