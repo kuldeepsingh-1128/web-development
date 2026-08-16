@@ -21,13 +21,34 @@ const userSchema= new mongoose.Schema({
 
 const user=mongoose.model("user",userSchema);
 
-user.find({}).then((result)=>{
-    console.log(result[0]);
+
+user.deleteOne({name:"ayush"})
+.then((res)=>{
+    console.log(res);
 }).catch((err)=>{
     console.log(err);
 })
 
 
+// user.updateOne({age:{$gte:21}},{age:20})
+// .then((res)=>{
+//     console.log(res);
+// }).catch((err)=>{
+//     console.log(err);
+// })
+
+// user.findById({'_id':"6a8076761cde498cf377d958"}).then((res)=>{
+//     console.log(res);
+// }).catch((err)=>{
+//     console.log(err);
+// })
+
+// user.findOne({age:{$gt:20}})
+// .then((result)=>{
+//     console.log(result);
+// }).catch((err)=>{
+//     console.log(err);
+// })
 
 // user.insertMany([
 //     {name:"ajay",age:18,city:"churu"},
