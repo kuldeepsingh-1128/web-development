@@ -1,0 +1,18 @@
+*{
+    /* background-color: black; */
+    /* color: white; */
+    text-align: center;
+}
+
+.chat{
+    width: 400px;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: inline-block;
+
+}
+.msj{
+    background-color: dodgerblue;
+    color: white;
+}
