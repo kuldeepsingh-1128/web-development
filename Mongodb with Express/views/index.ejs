@@ -10,20 +10,40 @@
 
 <body>
     <h1>_________ All Chats _______</h1>
+    <form action="/chats/new" method="get">
+        <button>New Chat</button>
+    </form>
+    <br><br>
     <%for(chat of chats){%>
         <div class="chat">
-            <div>
-                <h3>From:-<%=chat.from%></h3>
-                <h3>To:-<%=chat.to%></h3>
-            </div>
+            <p>From:- <i>
+                    <%=chat.from%>
+                </i>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                To:- <i>
+                    <%=chat.to%>
+                </i></p>
             <div class="msj">
-                <h2><%=chat.msj%></h2>
+                <p><b>
+                        <%=chat.msj%>
+                            <form action="/chats/<%=chat._id%>/edit" method="get">
+                                <button style="background-color: greenyellow;">edit</button>
+                            </form>
+                    </b></p>
             </div>
-            <div>
-                <h3>Time:-<%=chat.created_at%></h3>
-            </div>
+            <p>Date:-<%=chat.created_at.toString().split(" ").slice(0,4).join(" ")%></p>
+            <p>Time:-<%=chat.created_at.toString().split(" ")[4]%></p>
+
+            <div class=" btn">
+
+                    <form action="/chats/<%=chat._id%>?_method=DELETE" method="post">
+                        <button style="background-color: red;">delete</button>
+                    </form>
+                    <br><br>
+        </div>
         </div>
         <br><br>
+
         <%}%>
 </body>
 

@@ -16,3 +16,16 @@
     background-color: dodgerblue;
     color: white;
 }
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: red; */
+}
+.border{
+    border: 2px solid black;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 40%;
+    top:30vh;
+}
